@@ -1,4 +1,7 @@
-UNIQUE_PTR:
+<html>
+  <head>CPP Info</head>
+  <body>
+<h2>UNIQUE_PTR:<br></h2>
 This replaces the concept of auto_ptr in legacy CPP.
 The pointer is automatically removed when it is out of scope of the code block.
 The idea of unique pointer is to have single ownerer ship which means it cannot be passed around or copied, for that there is something called shared_ptr.
@@ -8,3 +11,6 @@ Players involved:
 Unique pointer can be integrated with legacy code or even code written in C(say some library), once registered the unique_ptr will take care of the deallocation of the resource.This can be 
 achieved by implementing a custom destructor which is passed as the second argument the pointer itself, this option is optional for other purposes meaning if there is no need to do say custom
 deletion and rely on deallocator provided by the cpp framework.
+  </body>
+</html>
+
